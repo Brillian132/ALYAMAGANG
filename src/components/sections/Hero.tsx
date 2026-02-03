@@ -130,7 +130,7 @@ const Hero = () => {
               {/* Portrait container with white border */}
               <div className="relative w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-[60%_40%_30%_70%/60%_30%_70%_40%] overflow-hidden border-[6px] border-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-gray-50">
                 <img 
-                  src="/alya.png" 
+                  src="alya.png" 
                   alt="Alya Dwiza Natania" 
                   className="w-full h-full object-cover"
                 />
