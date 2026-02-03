@@ -124,23 +124,17 @@ const Hero = () => {
                 ease: "easeInOut",
               }}
             >
-              {/* Blob background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] blur-sm scale-105" />
+              {/* Soft shadow blob background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-purple-200/30 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] blur-2xl scale-110" />
               
-              {/* Portrait placeholder */}
-<div className="relative w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-[60%_40%_30%_70%/60%_30%_70%_40%] bg-gradient-to-br from-secondary to-muted flex items-center justify-center overflow-hidden border-4 border-background shadow-2xl">
-  <div className="text-center p-8">
-    {/* Ganti dengan gambar */}
-    <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
-      <img 
-        src="/public/alya.png" 
-        alt="Your Name" 
-        className="w-full h-full object-cover"
-      />
-    </div>
-    <p className="text-muted-foreground text-sm">Professional Portrait</p>
-  </div>
-</div>
+              {/* Portrait container with white border */}
+              <div className="relative w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-[60%_40%_30%_70%/60%_30%_70%_40%] overflow-hidden border-[6px] border-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-gray-50">
+                <img 
+                  src="public/alya.jpg" 
+                  alt="Alya Dwiza Natania" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </motion.div>
           </motion.div>
         </div>
