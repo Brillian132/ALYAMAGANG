@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Figma, ExternalLink, Palette } from "lucide-react";
+import { Figma, ExternalLink } from "lucide-react";
 
 const designs = [
   {
@@ -7,11 +7,12 @@ const designs = [
     category: "UI/UX Design",
     tool: "Figma",
     description: "Description of your design project",
-    image: "figmaalya.png", // Ganti dengan path gambar Anda
-    link: "https://www.figma.com/design/thH1mAdiIMhU1ojqwyCzub/kelompok-1-DS-DEX?node-id=0-1&p=f", // Link ke Figma atau portfolio
+    image: "figmaalya.png",
+    link: "https://www.figma.com/design/thH1mAdiIMhU1ojqwyCzub/kelompok-1-DS-DEX?node-id=0-1&p=f",
     color: "from-purple-400/20 to-pink-500/10"
   }
-  
+]; // ✅ WAJIB ditutup
+
 const DesignPortfolio = () => {
   return (
     <section id="designs" className="py-24 px-6 bg-secondary/30">
@@ -23,7 +24,9 @@ const DesignPortfolio = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-primary text-sm tracking-widest uppercase mb-3">Design Portfolio</p>
+          <p className="text-primary text-sm tracking-widest uppercase mb-3">
+            Design Portfolio
+          </p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             Creative Works
           </h2>
@@ -35,28 +38,25 @@ const DesignPortfolio = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {designs.map((design, index) => (
             <motion.div
-              key={design.title}
+              key={index} // ✅ lebih aman pakai index atau id unik
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <a
-                href={design.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
+              <a href={design.link} target="_blank" rel="noopener noreferrer">
                 <div className="relative rounded-2xl overflow-hidden bg-background border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
-                  {/* Image Container */}
+                  
+                  {/* Image */}
                   <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-secondary to-muted">
                     <img
                       src={design.image}
                       alt={design.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    {/* Overlay on hover */}
+
+                    {/* Hover overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                       <div className="flex items-center gap-2 text-primary">
                         <ExternalLink className="w-5 h-5" />
@@ -68,7 +68,9 @@ const DesignPortfolio = () => {
                   {/* Content */}
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${design.color} flex items-center justify-center`}>
+                      <div
+                        className={`w-8 h-8 rounded-lg bg-gradient-to-br ${design.color} flex items-center justify-center`}
+                      >
                         <Figma className="w-4 h-4 text-primary" strokeWidth={2} />
                       </div>
                       <span className="text-xs text-muted-foreground uppercase tracking-wide">
