@@ -2,13 +2,48 @@ import { motion } from "framer-motion";
 import { Award, ExternalLink } from "lucide-react";
 
 const certifications = [
-  { name: "Email Marketing", issuer: "HubSpot", color: "from-orange-400/20 to-orange-500/10" },
-  { name: "SEO Certified", issuer: "HubSpot", color: "from-orange-400/20 to-orange-500/10" },
-  { name: "Content Marketing", issuer: "HubSpot", color: "from-orange-400/20 to-orange-500/10" },
-  { name: "Social Media Marketing", issuer: "HubSpot", color: "from-orange-400/20 to-orange-500/10" },
-  { name: "Beginner SEO", issuer: "Semrush", color: "from-violet-400/20 to-violet-500/10" },
-  { name: "AI-Powered Marketer", issuer: "Semrush", color: "from-violet-400/20 to-violet-500/10" },
-  { name: "Fundamentals of Digital Marketing", issuer: "Google", color: "from-blue-400/20 to-blue-500/10" },
+  { 
+    name: "Email Marketing", 
+    issuer: "HubSpot", 
+    color: "from-orange-400/20 to-orange-500/10",
+    link: "https://app-na2.hubspot.com/academy/achievements/73v0s8mk/en/1/alya-dwiza-natania/email-marketing" // Ganti dengan link asli
+  },
+  { 
+    name: "SEO Certified", 
+    issuer: "HubSpot", 
+    color: "from-orange-400/20 to-orange-500/10",
+    link: "https://app-na2.hubspot.com/academy/achievements/90grz7qx/en/1/alya-dwiza-natania/seo" // Ganti dengan link asli
+  },
+  { 
+    name: "Content Marketing", 
+    issuer: "HubSpot", 
+    color: "from-orange-400/20 to-orange-500/10",
+    link: "https://app-na2.hubspot.com/academy/achievements/t3vsc021/en/1/alya-dwiza-natania/content-marketing" // Ganti dengan link asli
+  },
+  { 
+    name: "Social Media Marketing", 
+    issuer: "HubSpot", 
+    color: "from-orange-400/20 to-orange-500/10",
+    link: "https://app-na2.hubspot.com/academy/achievements/h3bynkxf/en/1/alya-dwiza-natania/social-media-marketing" // Ganti dengan link asli
+  },
+  { 
+    name: "Beginner SEO", 
+    issuer: "Semrush", 
+    color: "from-violet-400/20 to-violet-500/10",
+    link: "https://static.semrush.com/academy/certificates/0e9dad42bd/alya-dwiza-natania_25.pdf" // Ganti dengan link asli
+  },
+  { 
+    name: "AI-Powered Marketer", 
+    issuer: "Semrush", 
+    color: "from-violet-400/20 to-violet-500/10",
+    link: "https://static.semrush.com/academy/certificates/6218a5a26b/alya-dwiza-natania_26.pdf" // Ganti dengan link asli
+  },
+  { 
+    name: "Fundamentals of Digital Marketing", 
+    issuer: "Google", 
+    color: "from-blue-400/20 to-blue-500/10",
+    link: "https://static.semrush.com/academy/certificates/6218a5a26b/alya-dwiza-natania_26.pdf" // Ganti dengan link asli
+  },
 ];
 
 const Certifications = () => {
@@ -38,26 +73,33 @@ const Certifications = () => {
               transition={{ duration: 0.4, delay: index * 0.05 }}
               className="group"
             >
-              <div className={`relative bg-gradient-to-br ${cert.color} rounded-2xl p-6 border border-border/50 hover:border-primary/20 hover:shadow-lg transition-all duration-300 overflow-hidden`}>
-                {/* Subtle glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-background/40" />
-                
-                <div className="relative">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Award className="w-5 h-5 text-primary" strokeWidth={1.5} />
-                    </div>
-                    <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </div>
+              
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className={`relative bg-gradient-to-br ${cert.color} rounded-2xl p-6 border border-border/50 hover:border-primary/20 hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer`}>
+                  {/* Subtle glow */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-background/80 to-background/40" />
                   
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-1 leading-tight">
-                    {cert.name}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {cert.issuer}
-                  </p>
+                  <div className="relative">
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <Award className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                      </div>
+                      <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                    
+                    <h3 className="font-display text-lg font-semibold text-foreground mb-1 leading-tight">
+                      {cert.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {cert.issuer}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </motion.div>
           ))}
         </div>
