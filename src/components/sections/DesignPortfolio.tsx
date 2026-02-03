@@ -4,7 +4,7 @@ import { Figma, ExternalLink } from "lucide-react";
 const designs = [
   {
     title: "Konten Brief Ultramilk",
-    category: "UI/UX Design",
+    category: "CopyWriting",
     tool: "PDF Case Study",
     description: "Case study lengkap branding dan konten Ultramilk.",
     image: "/figmaalya.png", // ← tetap pakai gambar cover!
