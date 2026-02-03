@@ -7,7 +7,7 @@ const designs = [
     category: "UI/UX Design",
     tool: "PDF Case Study",
     description: "Case study lengkap branding dan konten Ultramilk.",
-    image: "/thumbnail-ultramilk.png", // ← tetap pakai gambar cover!
+    image: "/figmaalya.png", // ← tetap pakai gambar cover!
     link: "/Konten Brief Ultramilk.pdf", // ← PDF
     color: "from-red-400/20 to-pink-500/10"
   }
