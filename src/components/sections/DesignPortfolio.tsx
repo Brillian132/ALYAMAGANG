@@ -8,30 +8,10 @@ const designs = [
     tool: "Figma",
     description: "Description of your design project",
     image: "/designs/project1.png", // Ganti dengan path gambar Anda
-    link: "https://figma.com/your-design-link", // Link ke Figma atau portfolio
+    link: "https://www.figma.com/design/thH1mAdiIMhU1ojqwyCzub/kelompok-1-DS-DEX?node-id=0-1&p=f", // Link ke Figma atau portfolio
     color: "from-purple-400/20 to-pink-500/10"
   },
-  {
-    title: "Design Project 2",
-    category: "Web Design",
-    tool: "Figma",
-    description: "Description of your design project",
-    image: "/designs/project2.png",
-    link: "https://figma.com/your-design-link",
-    color: "from-blue-400/20 to-cyan-500/10"
-  },
-  {
-    title: "Design Project 3",
-    category: "Mobile App Design",
-    tool: "Figma",
-    description: "Description of your design project",
-    image: "/designs/project3.png",
-    link: "https://figma.com/your-design-link",
-    color: "from-orange-400/20 to-yellow-500/10"
-  },
-  // Tambahkan lebih banyak project sesuai kebutuhan
-];
-
+  
 const DesignPortfolio = () => {
   return (
     <section id="designs" className="py-24 px-6 bg-secondary/30">
