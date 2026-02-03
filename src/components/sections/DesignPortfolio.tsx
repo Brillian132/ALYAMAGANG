@@ -3,15 +3,15 @@ import { Figma, ExternalLink } from "lucide-react";
 
 const designs = [
   {
-    title: "Design Project 1",
+    title: "Konten Brief Ultramilk",
     category: "UI/UX Design",
-    tool: "Figma",
-    description: "Description of your design project",
-    image: "figmaalya.png",
-    link: "https://www.figma.com/design/thH1mAdiIMhU1ojqwyCzub/kelompok-1-DS-DEX?node-id=0-1&p=f",
-    color: "from-purple-400/20 to-pink-500/10"
+    tool: "PDF Case Study",
+    description: "Case study lengkap branding dan konten Ultramilk.",
+    image: "/thumbnail-ultramilk.png", // ← tetap pakai gambar cover!
+    link: "/Konten Brief Ultramilk.pdf", // ← PDF
+    color: "from-red-400/20 to-pink-500/10"
   }
-]; // ✅ WAJIB ditutup
+];
 
 const DesignPortfolio = () => {
   return (
