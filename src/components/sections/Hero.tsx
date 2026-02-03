@@ -131,10 +131,13 @@ const Hero = () => {
               <div className="relative w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-[60%_40%_30%_70%/60%_30%_70%_40%] bg-gradient-to-br from-secondary to-muted flex items-center justify-center overflow-hidden border-4 border-background shadow-2xl">
                 <div className="text-center p-8">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                    <span className="font-display text-3xl text-primary font-semibold">AN</span>
-                  </div>
-                  <p className="text-muted-foreground text-sm">Professional Portrait</p>
-                </div>
+                   <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center overflow-hidden">
+  <img 
+    src="/public/alya.png" 
+    alt="Portrait" 
+    className="w-full h-full object-cover"
+  />
+</div>
               </div>
             </motion.div>
           </motion.div>
