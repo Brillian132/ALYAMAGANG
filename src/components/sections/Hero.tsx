@@ -128,17 +128,19 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] blur-sm scale-105" />
               
               {/* Portrait placeholder */}
-              <div className="relative w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-[60%_40%_30%_70%/60%_30%_70%_40%] bg-gradient-to-br from-secondary to-muted flex items-center justify-center overflow-hidden border-4 border-background shadow-2xl">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                   <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center overflow-hidden">
-  <img 
-    src="/public/alya.png" 
-    alt="Portrait" 
-    className="w-full h-full object-cover"
-  />
+<div className="relative w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-[60%_40%_30%_70%/60%_30%_70%_40%] bg-gradient-to-br from-secondary to-muted flex items-center justify-center overflow-hidden border-4 border-background shadow-2xl">
+  <div className="text-center p-8">
+    {/* Ganti dengan gambar */}
+    <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+      <img 
+        src="/public/alya.png" 
+        alt="Your Name" 
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <p className="text-muted-foreground text-sm">Professional Portrait</p>
+  </div>
 </div>
-              </div>
             </motion.div>
           </motion.div>
         </div>
