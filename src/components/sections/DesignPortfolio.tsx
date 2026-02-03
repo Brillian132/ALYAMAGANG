@@ -10,7 +10,7 @@ const designs = [
     image: "figmaalya.png", // Ganti dengan path gambar Anda
     link: "https://www.figma.com/design/thH1mAdiIMhU1ojqwyCzub/kelompok-1-DS-DEX?node-id=0-1&p=f", // Link ke Figma atau portfolio
     color: "from-purple-400/20 to-pink-500/10"
-  },
+  }
   
 const DesignPortfolio = () => {
   return (
