@@ -6,43 +6,43 @@ const certifications = [
     name: "Email Marketing", 
     issuer: "HubSpot", 
     color: "from-orange-400/20 to-orange-500/10",
-    link: "https://app-na2.hubspot.com/academy/achievements/73v0s8mk/en/1/alya-dwiza-natania/email-marketing" // Ganti dengan link asli
+    link: "https://link-sertifikat-email.com" 
   },
   { 
     name: "SEO Certified", 
     issuer: "HubSpot", 
     color: "from-orange-400/20 to-orange-500/10",
-    link: "https://app-na2.hubspot.com/academy/achievements/90grz7qx/en/1/alya-dwiza-natania/seo" // Ganti dengan link asli
+    link: "https://link-sertifikat-seo.com"
   },
   { 
     name: "Content Marketing", 
     issuer: "HubSpot", 
     color: "from-orange-400/20 to-orange-500/10",
-    link: "https://app-na2.hubspot.com/academy/achievements/t3vsc021/en/1/alya-dwiza-natania/content-marketing" // Ganti dengan link asli
+    link: "https://link-sertifikat-content.com"
   },
   { 
     name: "Social Media Marketing", 
     issuer: "HubSpot", 
     color: "from-orange-400/20 to-orange-500/10",
-    link: "https://app-na2.hubspot.com/academy/achievements/h3bynkxf/en/1/alya-dwiza-natania/social-media-marketing" // Ganti dengan link asli
+    link: "https://link-sertifikat-social.com"
   },
   { 
     name: "Beginner SEO", 
     issuer: "Semrush", 
     color: "from-violet-400/20 to-violet-500/10",
-    link: "https://static.semrush.com/academy/certificates/0e9dad42bd/alya-dwiza-natania_25.pdf" // Ganti dengan link asli
+    link: "https://link-sertifikat-beginner-seo.com"
   },
   { 
     name: "AI-Powered Marketer", 
     issuer: "Semrush", 
     color: "from-violet-400/20 to-violet-500/10",
-    link: "https://static.semrush.com/academy/certificates/6218a5a26b/alya-dwiza-natania_26.pdf" // Ganti dengan link asli
+    link: "https://link-sertifikat-ai.com"
   },
   { 
     name: "Fundamentals of Digital Marketing", 
     issuer: "Google", 
     color: "from-blue-400/20 to-blue-500/10",
-    link: "https://static.semrush.com/academy/certificates/6218a5a26b/alya-dwiza-natania_26.pdf" // Ganti dengan link asli
+    link: "https://link-sertifikat-google.com"
   },
 ];
 
